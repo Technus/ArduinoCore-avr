@@ -17,6 +17,8 @@ yun.vid.3=0x2A03
 yun.pid.3=0x8041
 
 yun.upload.tool=avrdude
+yun.upload.tool.serial=avrdude
+yun.upload.tool.network=arduino_ota
 yun.upload.protocol=avr109
 yun.upload.maximum_size=28672
 yun.upload.maximum_data_size=2560
@@ -26,6 +28,8 @@ yun.upload.use_1200bps_touch=true
 yun.upload.wait_for_upload_port=true
 
 yun.bootloader.tool=avrdude
+yun.bootloader.tool.serial=avrdude
+yun.bootloader.tool.network=arduino_ota
 yun.bootloader.low_fuses=0xff
 yun.bootloader.high_fuses=0xd8
 yun.bootloader.extended_fuses=0xfb
@@ -58,12 +62,16 @@ uno.vid.3=0x2341
 uno.pid.3=0x0243
 
 uno.upload.tool=avrdude
+uno.upload.tool.serial=avrdude
+uno.upload.tool.network=arduino_ota
 uno.upload.protocol=arduino
 uno.upload.maximum_size=32256
 uno.upload.maximum_data_size=2048
 uno.upload.speed=115200
 
 uno.bootloader.tool=avrdude
+uno.bootloader.tool.serial=avrdude
+uno.bootloader.tool.network=arduino_ota
 uno.bootloader.low_fuses=0xFF
 uno.bootloader.high_fuses=0xDE
 uno.bootloader.extended_fuses=0xFD
@@ -82,9 +90,13 @@ uno.build.variant=standard
 diecimila.name=Arduino Duemilanove or Diecimila
 
 diecimila.upload.tool=avrdude
+diecimila.upload.tool.serial=avrdude
+diecimila.upload.tool.network=arduino_ota
 diecimila.upload.protocol=arduino
 
 diecimila.bootloader.tool=avrdude
+diecimila.bootloader.tool.serial=avrdude
+diecimila.bootloader.tool.network=arduino_ota
 diecimila.bootloader.low_fuses=0xFF
 diecimila.bootloader.unlock_bits=0x3F
 diecimila.bootloader.lock_bits=0x0F
@@ -127,9 +139,13 @@ diecimila.menu.cpu.atmega168.build.mcu=atmega168
 nano.name=Arduino Nano
 
 nano.upload.tool=avrdude
+nano.upload.tool.serial=avrdude
+nano.upload.tool.network=arduino_ota
 nano.upload.protocol=arduino
 
 nano.bootloader.tool=avrdude
+nano.bootloader.tool.serial=avrdude
+nano.bootloader.tool.network=arduino_ota
 nano.bootloader.unlock_bits=0x3F
 nano.bootloader.lock_bits=0x0F
 
@@ -201,9 +217,13 @@ mega.vid.5=0x2341
 mega.pid.5=0x0242
 
 mega.upload.tool=avrdude
+mega.upload.tool.serial=avrdude
+mega.upload.tool.network=arduino_ota
 mega.upload.maximum_data_size=8192
 
 mega.bootloader.tool=avrdude
+mega.bootloader.tool.serial=avrdude
+mega.bootloader.tool.network=arduino_ota
 mega.bootloader.low_fuses=0xFF
 mega.bootloader.unlock_bits=0x3F
 mega.bootloader.lock_bits=0x0F
@@ -258,12 +278,16 @@ megaADK.vid.3=0x2A03
 megaADK.pid.3=0x0044
 
 megaADK.upload.tool=avrdude
+megaADK.upload.tool.serial=avrdude
+megaADK.upload.tool.network=arduino_ota
 megaADK.upload.protocol=wiring
 megaADK.upload.maximum_size=253952
 megaADK.upload.maximum_data_size=8192
 megaADK.upload.speed=115200
 
 megaADK.bootloader.tool=avrdude
+megaADK.bootloader.tool.serial=avrdude
+megaADK.bootloader.tool.network=arduino_ota
 megaADK.bootloader.low_fuses=0xFF
 megaADK.bootloader.high_fuses=0xD8
 megaADK.bootloader.extended_fuses=0xFD
@@ -290,6 +314,8 @@ leonardo.vid.3=0x2A03
 leonardo.pid.3=0x8036
 
 leonardo.upload.tool=avrdude
+leonardo.upload.tool.serial=avrdude
+leonardo.upload.tool.network=arduino_ota
 leonardo.upload.protocol=avr109
 leonardo.upload.maximum_size=28672
 leonardo.upload.maximum_data_size=2560
@@ -299,6 +325,8 @@ leonardo.upload.use_1200bps_touch=true
 leonardo.upload.wait_for_upload_port=true
 
 leonardo.bootloader.tool=avrdude
+leonardo.bootloader.tool.serial=avrdude
+leonardo.bootloader.tool.network=arduino_ota
 leonardo.bootloader.low_fuses=0xff
 leonardo.bootloader.high_fuses=0xd8
 leonardo.bootloader.extended_fuses=0xcb
@@ -325,6 +353,8 @@ leonardoeth.vid.1=0x2a03
 leonardoeth.pid.1=0x8040
 
 leonardoeth.upload.tool=avrdude
+leonardoeth.upload.tool.serial=avrdude
+leonardoeth.upload.tool.network=arduino_ota
 leonardoeth.upload.protocol=avr109
 leonardoeth.upload.maximum_size=28672
 leonardoeth.upload.maximum_data_size=2560
@@ -334,6 +364,8 @@ leonardoeth.upload.use_1200bps_touch=true
 leonardoeth.upload.wait_for_upload_port=true
 
 leonardoeth.bootloader.tool=avrdude
+leonardoeth.bootloader.tool.serial=avrdude
+leonardoeth.bootloader.tool.network=arduino_ota
 leonardoeth.bootloader.low_fuses=0xff
 leonardoeth.bootloader.high_fuses=0xd8
 leonardoeth.bootloader.extended_fuses=0xcb
@@ -369,6 +401,8 @@ micro.vid.5=0x2341
 micro.pid.5=0x8237
 
 micro.upload.tool=avrdude
+micro.upload.tool.serial=avrdude
+micro.upload.tool.network=arduino_ota
 micro.upload.protocol=avr109
 micro.upload.maximum_size=28672
 micro.upload.maximum_data_size=2560
@@ -378,6 +412,8 @@ micro.upload.use_1200bps_touch=true
 micro.upload.wait_for_upload_port=true
 
 micro.bootloader.tool=avrdude
+micro.bootloader.tool.serial=avrdude
+micro.bootloader.tool.network=arduino_ota
 micro.bootloader.low_fuses=0xff
 micro.bootloader.high_fuses=0xd8
 micro.bootloader.extended_fuses=0xcb
@@ -408,6 +444,8 @@ esplora.vid.3=0x2A03
 esplora.pid.3=0x803C
 
 esplora.upload.tool=avrdude
+esplora.upload.tool.serial=avrdude
+esplora.upload.tool.network=arduino_ota
 esplora.upload.protocol=avr109
 esplora.upload.maximum_size=28672
 esplora.upload.maximum_data_size=2560
@@ -417,6 +455,8 @@ esplora.upload.use_1200bps_touch=true
 esplora.upload.wait_for_upload_port=true
 
 esplora.bootloader.tool=avrdude
+esplora.bootloader.tool.serial=avrdude
+esplora.bootloader.tool.network=arduino_ota
 esplora.bootloader.low_fuses=0xff
 esplora.bootloader.high_fuses=0xd8
 esplora.bootloader.extended_fuses=0xcb
@@ -439,9 +479,13 @@ esplora.build.extra_flags={build.usb_flags}
 mini.name=Arduino Mini
 
 mini.upload.tool=avrdude
+mini.upload.tool.serial=avrdude
+mini.upload.tool.network=arduino_ota
 mini.upload.protocol=arduino
 
 mini.bootloader.tool=avrdude
+mini.bootloader.tool.serial=avrdude
+mini.bootloader.tool.network=arduino_ota
 mini.bootloader.low_fuses=0xff
 mini.bootloader.unlock_bits=0x3F
 mini.bootloader.lock_bits=0x0F
@@ -484,12 +528,16 @@ mini.menu.cpu.atmega168.build.mcu=atmega168
 ethernet.name=Arduino Ethernet
 
 ethernet.upload.tool=avrdude
+ethernet.upload.tool.serial=avrdude
+ethernet.upload.tool.network=arduino_ota
 ethernet.upload.protocol=arduino
 ethernet.upload.maximum_size=32256
 ethernet.upload.maximum_data_size=2048
 ethernet.upload.speed=115200
 
 ethernet.bootloader.tool=avrdude
+ethernet.bootloader.tool.serial=avrdude
+ethernet.bootloader.tool.network=arduino_ota
 ethernet.bootloader.low_fuses=0xff
 ethernet.bootloader.high_fuses=0xde
 ethernet.bootloader.extended_fuses=0xFD
@@ -508,12 +556,16 @@ ethernet.build.core=arduino
 fio.name=Arduino Fio
 
 fio.upload.tool=avrdude
+fio.upload.tool.serial=avrdude
+fio.upload.tool.network=arduino_ota
 fio.upload.protocol=arduino
 fio.upload.maximum_size=30720
 fio.upload.maximum_data_size=2048
 fio.upload.speed=57600
 
 fio.bootloader.tool=avrdude
+fio.bootloader.tool.serial=avrdude
+fio.bootloader.tool.network=arduino_ota
 fio.bootloader.low_fuses=0xFF
 fio.bootloader.high_fuses=0xDA
 fio.bootloader.extended_fuses=0xFD
@@ -532,11 +584,15 @@ fio.build.variant=eightanaloginputs
 bt.name=Arduino BT
 
 bt.upload.tool=avrdude
+bt.upload.tool.serial=avrdude
+bt.upload.tool.network=arduino_ota
 bt.upload.protocol=arduino
 bt.upload.speed=19200
 bt.upload.disable_flushing=true
 
 bt.bootloader.tool=avrdude
+bt.bootloader.tool.serial=avrdude
+bt.bootloader.tool.network=arduino_ota
 bt.bootloader.low_fuses=0xff
 bt.bootloader.unlock_bits=0x3F
 bt.bootloader.lock_bits=0x0F
@@ -579,6 +635,8 @@ LilyPadUSB.vid.1=0x1B4F
 LilyPadUSB.pid.1=0x9208
 
 LilyPadUSB.upload.tool=avrdude
+LilyPadUSB.upload.tool.serial=avrdude
+LilyPadUSB.upload.tool.network=arduino_ota
 LilyPadUSB.upload.protocol=avr109
 LilyPadUSB.upload.maximum_size=28672
 LilyPadUSB.upload.maximum_data_size=2560
@@ -588,6 +646,8 @@ LilyPadUSB.upload.use_1200bps_touch=true
 LilyPadUSB.upload.wait_for_upload_port=true
 
 LilyPadUSB.bootloader.tool=avrdude
+LilyPadUSB.bootloader.tool.serial=avrdude
+LilyPadUSB.bootloader.tool.network=arduino_ota
 LilyPadUSB.bootloader.low_fuses=0xff
 LilyPadUSB.bootloader.high_fuses=0xd8
 LilyPadUSB.bootloader.extended_fuses=0xce
@@ -610,9 +670,13 @@ LilyPadUSB.build.extra_flags={build.usb_flags}
 lilypad.name=LilyPad Arduino
 
 lilypad.upload.tool=avrdude
+lilypad.upload.tool.serial=avrdude
+lilypad.upload.tool.network=arduino_ota
 lilypad.upload.protocol=arduino
 
 lilypad.bootloader.tool=avrdude
+lilypad.bootloader.tool.serial=avrdude
+lilypad.bootloader.tool.network=arduino_ota
 lilypad.bootloader.unlock_bits=0x3F
 lilypad.bootloader.lock_bits=0x0F
 
@@ -656,9 +720,13 @@ lilypad.menu.cpu.atmega168.build.mcu=atmega168
 pro.name=Arduino Pro or Pro Mini
 
 pro.upload.tool=avrdude
+pro.upload.tool.serial=avrdude
+pro.upload.tool.network=arduino_ota
 pro.upload.protocol=arduino
 
 pro.bootloader.tool=avrdude
+pro.bootloader.tool.serial=avrdude
+pro.bootloader.tool.network=arduino_ota
 pro.bootloader.unlock_bits=0x3F
 pro.bootloader.lock_bits=0x0F
 
@@ -735,10 +803,14 @@ pro.menu.cpu.8MHzatmega168.build.f_cpu=8000000L
 atmegang.name=Arduino NG or older
 
 atmegang.upload.tool=avrdude
+atmegang.upload.tool.serial=avrdude
+atmegang.upload.tool.network=arduino_ota
 atmegang.upload.protocol=arduino
 atmegang.upload.speed=19200
 
 atmegang.bootloader.tool=avrdude
+atmegang.bootloader.tool.serial=avrdude
+atmegang.bootloader.tool.network=arduino_ota
 atmegang.bootloader.unlock_bits=0x3F
 atmegang.bootloader.lock_bits=0x0F
 
@@ -789,6 +861,8 @@ robotControl.vid.3=0x2A03
 robotControl.pid.3=0x8038
 
 robotControl.upload.tool=avrdude
+robotControl.upload.tool.serial=avrdude
+robotControl.upload.tool.network=arduino_ota
 robotControl.upload.protocol=avr109
 robotControl.upload.maximum_size=28672
 robotControl.upload.maximum_data_size=2560
@@ -798,6 +872,8 @@ robotControl.upload.use_1200bps_touch=true
 robotControl.upload.wait_for_upload_port=true
 
 robotControl.bootloader.tool=avrdude
+robotControl.bootloader.tool.serial=avrdude
+robotControl.bootloader.tool.network=arduino_ota
 robotControl.bootloader.low_fuses=0xff
 robotControl.bootloader.high_fuses=0xd8
 robotControl.bootloader.extended_fuses=0xcb
@@ -828,6 +904,8 @@ robotMotor.vid.3=0x2A03
 robotMotor.pid.3=0x8039
 
 robotMotor.upload.tool=avrdude
+robotMotor.upload.tool.serial=avrdude
+robotMotor.upload.tool.network=arduino_ota
 robotMotor.upload.protocol=avr109
 robotMotor.upload.maximum_size=28672
 robotMotor.upload.maximum_data_size=2560
@@ -837,6 +915,8 @@ robotMotor.upload.use_1200bps_touch=true
 robotMotor.upload.wait_for_upload_port=true
 
 robotMotor.bootloader.tool=avrdude
+robotMotor.bootloader.tool.serial=avrdude
+robotMotor.bootloader.tool.network=arduino_ota
 robotMotor.bootloader.low_fuses=0xff
 robotMotor.bootloader.high_fuses=0xd8
 robotMotor.bootloader.extended_fuses=0xcb
@@ -865,6 +945,8 @@ gemma.bootloader.low_fuses=0xF1
 gemma.bootloader.high_fuses=0xD5
 gemma.bootloader.extended_fuses=0xFE
 gemma.bootloader.tool=avrdude
+gemma.bootloader.tool.serial=avrdude
+gemma.bootloader.tool.network=arduino_ota
 gemma.bootloader.lock_bits=
 gemma.bootloader.unlock_bits=
 gemma.bootloader.file=gemma/gemma_v1.hex
@@ -876,6 +958,8 @@ gemma.build.variant=gemma
 gemma.build.board=AVR_GEMMA
 
 gemma.upload.tool=avrdude
+gemma.upload.tool.serial=avrdude
+gemma.upload.tool.network=arduino_ota
 gemma.upload.maximum_size=5310
 
 ##############################################################
@@ -889,6 +973,8 @@ circuitplay32u4cat.bootloader.file=caterina/Caterina-Circuitplay32u4.hex
 circuitplay32u4cat.bootloader.unlock_bits=0x3F
 circuitplay32u4cat.bootloader.lock_bits=0x2F
 circuitplay32u4cat.bootloader.tool=avrdude
+circuitplay32u4cat.bootloader.tool.serial=avrdude
+circuitplay32u4cat.bootloader.tool.network=arduino_ota
 circuitplay32u4cat.build.mcu=atmega32u4
 circuitplay32u4cat.build.f_cpu=8000000L
 circuitplay32u4cat.build.vid=0x239A
@@ -906,6 +992,8 @@ circuitplay32u4cat.upload.disable_flushing=true
 circuitplay32u4cat.upload.use_1200bps_touch=true
 circuitplay32u4cat.upload.wait_for_upload_port=true
 circuitplay32u4cat.upload.tool=avrdude
+circuitplay32u4cat.upload.tool.serial=avrdude
+circuitplay32u4cat.upload.tool.network=arduino_ota
 circuitplay32u4cat.vid.0=0x239A
 circuitplay32u4cat.pid.0=0x8011
 
@@ -920,6 +1008,8 @@ yunmini.vid.1=0x2a03
 yunmini.pid.1=0x8050
 
 yunmini.upload.tool=avrdude
+yunmini.upload.tool.serial=avrdude
+yunmini.upload.tool.network=arduino_ota
 yunmini.upload.protocol=avr109
 yunmini.upload.maximum_size=28672
 yunmini.upload.maximum_data_size=2560
@@ -929,6 +1019,8 @@ yunmini.upload.use_1200bps_touch=true
 yunmini.upload.wait_for_upload_port=true
 
 yunmini.bootloader.tool=avrdude
+yunmini.bootloader.tool.serial=avrdude
+yunmini.bootloader.tool.network=arduino_ota
 yunmini.bootloader.low_fuses=0xff
 yunmini.bootloader.high_fuses=0xd8
 yunmini.bootloader.extended_fuses=0xfb
@@ -957,6 +1049,8 @@ chiwawa.vid.1=0x2a03
 chiwawa.pid.1=0x8056
 
 chiwawa.upload.tool=avrdude
+chiwawa.upload.tool.serial=avrdude
+chiwawa.upload.tool.network=arduino_ota
 chiwawa.upload.protocol=avr109
 chiwawa.upload.maximum_size=28672
 chiwawa.upload.maximum_data_size=2560
@@ -966,6 +1060,8 @@ chiwawa.upload.use_1200bps_touch=true
 chiwawa.upload.wait_for_upload_port=true
 
 chiwawa.bootloader.tool=avrdude
+chiwawa.bootloader.tool.serial=avrdude
+chiwawa.bootloader.tool.network=arduino_ota
 chiwawa.bootloader.low_fuses=0xff
 chiwawa.bootloader.high_fuses=0xd8
 chiwawa.bootloader.extended_fuses=0xfb
@@ -994,6 +1090,8 @@ one.vid.1=0x2a03
 one.pid.1=0x8001
 
 one.upload.tool=avrdude
+one.upload.tool.serial=avrdude
+one.upload.tool.network=arduino_ota
 one.upload.protocol=avr109
 one.upload.maximum_size=28672
 one.upload.maximum_data_size=2560
@@ -1003,6 +1101,8 @@ one.upload.use_1200bps_touch=true
 one.upload.wait_for_upload_port=true
 
 one.bootloader.tool=avrdude
+one.bootloader.tool.serial=avrdude
+one.bootloader.tool.network=arduino_ota
 one.bootloader.low_fuses=0xff
 one.bootloader.high_fuses=0xd8
 one.bootloader.extended_fuses=0xfb
@@ -1027,6 +1127,8 @@ unowifi.vid.0=0x2A03
 unowifi.pid.0=0x0057
 
 unowifi.upload.tool=avrdude
+unowifi.upload.tool.serial=avrdude
+unowifi.upload.tool.network=arduino_ota
 unowifi.upload.protocol=arduino
 unowifi.upload.maximum_size=32256
 unowifi.upload.maximum_data_size=2048
@@ -1038,6 +1140,8 @@ unowifi.upload.network.endpoint_reset=/log/reset
 unowifi.upload.network.port=80
 
 unowifi.bootloader.tool=avrdude
+unowifi.bootloader.tool.serial=avrdude
+unowifi.bootloader.tool.network=arduino_ota
 unowifi.bootloader.low_fuses=0xFF
 unowifi.bootloader.high_fuses=0xDE
 unowifi.bootloader.extended_fuses=0x05
