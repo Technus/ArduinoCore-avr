@@ -10,7 +10,7 @@ version=1.8.3
 
 # pluggable discovery support
 # For more info:
-# https://arduino.github.io/arduino-cli/0.19/platform-specification/#pluggable-discovery
+# https://arduino.github.io/arduino-cli/latest/platform-specification/#pluggable-discovery
 pluggable_discovery.required.0=builtin:serial-discovery
 pluggable_discovery.required.1=builtin:mdns-discovery
 
