@@ -28,8 +28,8 @@
 #undef RXLED1
 #undef TX_RX_LED_INIT
 
-#define TXLED0			PORTD &= ~(1<<5)
-#define TXLED1			PORTD |= (1<<5)
-#define RXLED0			PORTB &= ~(1<<0)
-#define RXLED1			PORTB |= (1<<0)
-#define TX_RX_LED_INIT	DDRD |= (1<<5), DDRB |= (1<<0), TXLED0, RXLED0
+#define TXLED0			    PORTF &= ~(1<<1)
+#define TXLED1			    PORTF |= (1<<1)
+#define RXLED0			    PORTF &= ~(1<<0)
+#define RXLED1			    PORTF |= (1<<0)
+#define TX_RX_LED_INIT	DDRF |= (1<<0), DDRF |= (1<<1), TXLED0, RXLED0
