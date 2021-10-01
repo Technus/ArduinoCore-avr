@@ -215,7 +215,17 @@ void Serial_::flush(void)
 
 size_t Serial_::write(uint8_t c)
 {
-	return write(&c, 1);
+	if (_usbLineInfo.lineState > 0)	{
+		int r = USB_Send(CDC_TX,&c,1);
+		if (r > 0) {
+			return r;
+		} else {
+			setWriteError();
+			return 0;
+		}
+	}
+	setWriteError();
+	return 0;
 }
 
 size_t Serial_::write(const uint8_t *buffer, size_t size)
