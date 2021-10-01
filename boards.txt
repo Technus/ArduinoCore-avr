@@ -397,50 +397,6 @@ micro.build.extra_flags={build.usb_flags}
 
 ##############################################################
 
-microAlt.name=Arduino Micro Alt
-
-microAlt.vid.0=0x2341
-microAlt.pid.0=0x0037
-microAlt.vid.1=0x2341
-microAlt.pid.1=0x8037
-microAlt.vid.2=0x2A03
-microAlt.pid.2=0x0037
-microAlt.vid.3=0x2A03
-microAlt.pid.3=0x8037
-microAlt.vid.4=0x2341
-microAlt.pid.4=0x0237
-microAlt.vid.5=0x2341
-microAlt.pid.5=0x8237
-
-microAlt.upload.tool=avrdude
-microAlt.upload.protocol=avr109
-microAlt.upload.maximum_size=28672
-microAlt.upload.maximum_data_size=2560
-microAlt.upload.speed=57600
-microAlt.upload.disable_flushing=true
-microAlt.upload.use_1200bps_touch=true
-microAlt.upload.wait_for_upload_port=true
-
-microAlt.bootloader.tool=avrdude
-microAlt.bootloader.low_fuses=0xff
-microAlt.bootloader.high_fuses=0xd8
-microAlt.bootloader.extended_fuses=0xcb
-microAlt.bootloader.file=caterina/Caterina-Micro.hex
-microAlt.bootloader.unlock_bits=0x3F
-microAlt.bootloader.lock_bits=0x2F
-
-microAlt.build.mcu=atmega32u4
-microAlt.build.f_cpu=16000000L
-microAlt.build.vid=0x2341
-microAlt.build.pid=0x8037
-microAlt.build.usb_product="Arduino Micro Alt"
-microAlt.build.board=AVR_MICRO_ALT
-microAlt.build.core=arduino
-microAlt.build.variant=microAlt
-microAlt.build.extra_flags={build.usb_flags}
-
-##############################################################
-
 esplora.name=Arduino Esplora
 esplora.vid.0=0x2341
 esplora.pid.0=0x003C
