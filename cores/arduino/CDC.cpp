@@ -267,7 +267,7 @@ Serial_::operator bool() {
 	return result;
 }
 
-unsigned long Serial_::baud() {
+uint32_t Serial_::baud() {
 	// Disable interrupts while reading a multi-byte value
 	uint32_t baudrate;
 	ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
