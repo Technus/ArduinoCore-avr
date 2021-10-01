@@ -336,9 +336,10 @@ u8 _initEndpoints[USB_ENDPOINTS] =
 	// Following endpoints are automatically initialized to 0
 };
 
+#define EP_SINGLE_16 0x12
 #define EP_SINGLE_64 0x32	// EP0
 #define EP_DOUBLE_64 0x36	// Other endpoints
-#define EP_SINGLE_16 0x12
+#define EP_DOUBLE_128 0x46	// Other endpoints
 
 static
 void InitEP(u8 index, u8 type, u8 size)
@@ -361,6 +362,8 @@ void InitEndpoints()
 		UECFG1X = EP_SINGLE_16;
 #elif USB_EP_SIZE == 64
 		UECFG1X = EP_DOUBLE_64;
+#elif USB_EP_SIZE == 128
+		UECFG1X = EP_DOUBLE_128;
 #else
 #error Unsupported value for USB_EP_SIZE
 #endif
