@@ -34,9 +34,7 @@ volatile u8 RxLEDPulse; /**< Milliseconds remaining for data Rx LED pulse */
 extern const u16 STRING_LANGUAGE[] PROGMEM;
 extern const u8 STRING_PRODUCT[] PROGMEM;
 extern const u8 STRING_MANUFACTURER[] PROGMEM;
-#ifndef PLUGGABLE_USB_ENABLED
 extern const u8 STRING_SERIAL[] PROGMEM;
-#endif
 extern const DeviceDescriptor USB_DeviceDescriptorIAD PROGMEM;
 
 const u16 STRING_LANGUAGE[2] = {
@@ -72,13 +70,11 @@ const u8 STRING_MANUFACTURER[] PROGMEM = USB_MANUFACTURER;
 u8 STRING_MANUFACTURER_LEN = strlen(USB_MANUFACTURER);
 u8 const * STRING_MANUFACTURER_PTR = STRING_MANUFACTURER;
 
-#ifndef PLUGGABLE_USB_ENABLED
 #define USB_SERIAL ""
 
 const u8 STRING_SERIAL[] PROGMEM = USB_SERIAL;
 u8 STRING_SERIAL_LEN = strlen(USB_SERIAL);
 u8 const * STRING_SERIAL_PTR = STRING_SERIAL;
-#endif
 
 
 #define DEVICE_CLASS 0x02
@@ -546,9 +542,13 @@ bool SendDescriptor(USBSetup& setup)
 #ifdef PLUGGABLE_USB_ENABLED
 			char name[ISERIAL_MAX_LEN];
 			PluggableUSB().getShortName(name);
+			u8 strLen=strlen(name);
+			if(strLen==0){
+#endif
+				return USB_SendStringDescriptor(STRING_SERIAL_PTR, STRING_SERIAL_LEN, TRANSFER_PGM);
+#ifdef PLUGGABLE_USB_ENABLED
+			}
 			return USB_SendStringDescriptor((uint8_t*)name, strlen(name), 0);
-#else
-			return USB_SendStringDescriptor(STRING_SERIAL_PTR, STRING_SERIAL_LEN, TRANSFER_PGM);
 #endif
 		}
 		else
