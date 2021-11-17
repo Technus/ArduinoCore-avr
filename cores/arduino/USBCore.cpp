@@ -47,6 +47,8 @@ const u16 STRING_LANGUAGE[2] = {
 #endif
 
 const u8 STRING_PRODUCT[] PROGMEM = USB_PRODUCT;
+u8 STRING_PRODUCT_LEN = strlen(USB_PRODUCT);
+u8 const * STRING_PRODUCT_PTR = &STRING_PRODUCT;
 
 #if USB_VID == 0x2341
 #  if defined(USB_MANUFACTURER)
@@ -64,6 +66,8 @@ const u8 STRING_PRODUCT[] PROGMEM = USB_PRODUCT;
 #endif
 
 const u8 STRING_MANUFACTURER[] PROGMEM = USB_MANUFACTURER;
+u8 STRING_MANUFACTURER_LEN = strlen(USB_MANUFACTURER);
+u8 const * STRING_MANUFACTURER_PTR = &STRING_MANUFACTURER;
 
 
 #define DEVICE_CLASS 0x02
@@ -522,10 +526,10 @@ bool SendDescriptor(USBSetup& setup)
 			desc_addr = (const u8*)&STRING_LANGUAGE;
 		}
 		else if (setup.wValueL == IPRODUCT) {
-			return USB_SendStringDescriptor(STRING_PRODUCT, strlen(USB_PRODUCT), TRANSFER_PGM);
+			return USB_SendStringDescriptor(STRING_PRODUCT_PTR, STRING_PRODUCT_LEN, TRANSFER_PGM);
 		}
 		else if (setup.wValueL == IMANUFACTURER) {
-			return USB_SendStringDescriptor(STRING_MANUFACTURER, strlen(USB_MANUFACTURER), TRANSFER_PGM);
+			return USB_SendStringDescriptor(STRING_MANUFACTURER_PTR, STRING_MANUFACTURER_LEN, TRANSFER_PGM);
 		}
 		else if (setup.wValueL == ISERIAL) {
 #ifdef PLUGGABLE_USB_ENABLED
