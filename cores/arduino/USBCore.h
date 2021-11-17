@@ -26,7 +26,7 @@ extern u8 STRING_MANUFACTURER_LEN;
 
 #ifndef PLUGGABLE_USB_ENABLED
 extern u8 const * STRING_SERIAL_PTR;
-extern u8 STRING_SERIAL_PTR;
+extern u8 STRING_SERIAL_LEN;
 #endif
 
 #include "USBAPI.h"
