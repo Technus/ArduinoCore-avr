@@ -18,6 +18,12 @@
 #ifndef __USBCORE_H__
 #define __USBCORE_H__
 
+u8 const * STRING_PRODUCT_PTR;
+u8 STRING_PRODUCT_LEN;
+
+u8 const * STRING_MANUFACTURER_PTR;
+u8 STRING_MANUFACTURER_LEN;
+
 #include "USBAPI.h"
 
 //	Standard requests
